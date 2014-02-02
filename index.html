@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link href="css/pageslider.css" rel="stylesheet">
+        <link href="css/ratchet.css" rel="stylesheet">
+        <title>Xcite Operations</title>
+    </head>
+    <body>
+
+        <script type="text/template" id="home-template">
+          <header class="bar-title">
+            <h1 class="title">Xcite Operations</h1>
+          </header>
+          <div class="content">
+              <div class="content-padded">
+                  <a class="button-main button-block" id='new-btn'>New Delivery</a>        
+                  <a class="button-block" id='sync-btn'>Sync Deliveries</a>        
+                  <a class="button-negative button-block" id='accnt-btn'">Manage Account</a>        
+              </div>
+          </div>
+        </script>
+
+        <script type="text/template" id="new-delivery-template">
+          <header class="bar-title">
+              <h1 class="title">New Delivery</h1>
+          </header>
+          <div class="content">
+            <div class="content-padded">
+                <form>
+                  <input type="text" placeholder="Enter Barcode">
+                  <a class="button button-block" id="scan_btn">Scan</a>   
+                </form>        
+                <div class='actions'>
+                    <a class="button-positive button-block">Delivered</a>
+                    <a class="button-positive button-block">Customer Not Available</a>        
+                    <a class="button-positive button-block">Cancelled</a>        
+                    <a class="button-positive button-block">Redeliver</a>        
+                    <a class="button-negative button-block cancel">Cancel</a>        
+                </div>
+            </div>
+        </script>
+    
+
+        <!-- VENDOR LIB JS IMPORT -->
+        <script src="lib/jquery-min.js"></script>
+        <script src="lib/underscore-min.js"></script>
+        <script src="lib/backbone-min.js"></script>
+        <script src="lib/pageslider.js"></script>
+        <script src="lib/ratchet.js"></script>
+
+        <!-- CUSTOM JS FILES -->
+        <!-- <script type="text/javascript" src="phonegap.js"></script> -->
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/adapter/localstorage-adapter.js"></script>
+    </body>
+</html>
